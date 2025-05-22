@@ -3,7 +3,7 @@ import { WhiteCard } from '../../components';
 import { useBearStore } from '../../stores';
 export const Dashboard = () => {
 
-const totalBears = useBearStore(state => state.computed.totalBears) 
+const totalBears = useBearStore((state: any) => state.computed.totalBears) 
 
   return (
     <>

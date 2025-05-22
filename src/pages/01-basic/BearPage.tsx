@@ -3,16 +3,16 @@ import { WhiteCard } from '../../components';
 import { useBearStore } from '../../stores';
 
 export const BearPage = () => {
-  const bears = useBearStore(useShallow(state => state.bears));
-  const blackBear = useBearStore(state => state.blackBears);
-  const polarBear = useBearStore(state => state.polarBears);
-  const pandaBear = useBearStore(state => state.pandaBears);
-  const increaseBlackBear = useBearStore(state => state.increaseBlackBear);
-  const increasePolarBear = useBearStore(state => state.increasePolarBear);
-  const increasePandaBear = useBearStore(state => state.increasePandaBear);
-  const doNothing = useBearStore(state => state.doNothing);
-  const addBear = useBearStore(state => state.addBear);
-  const clearBears = useBearStore(state => state.clearBears);
+  const bears = useBearStore(useShallow((state: any) => state.bears));
+  const blackBear = useBearStore((state: any) => state.blackBears);
+  const polarBear = useBearStore((state: any) => state.polarBears);
+  const pandaBear = useBearStore((state: any) => state.pandaBears);
+  const increaseBlackBear = useBearStore((state: any) => state.increaseBlackBear);
+  const increasePolarBear = useBearStore((state: any) => state.increasePolarBear);
+  const increasePandaBear = useBearStore((state: any) => state.increasePandaBear);
+  const doNothing = useBearStore((state: any) => state.doNothing);
+  const addBear = useBearStore((state: any) => state.addBear);
+  const clearBears = useBearStore((state: any) => state.clearBears);
 
   return (
     <>
