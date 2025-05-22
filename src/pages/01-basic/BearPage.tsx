@@ -65,7 +65,7 @@ export const BearPage = () => {
           <pre>
             { JSON.stringify(bears, null, 2) }
           </pre>
-          <button className='mt-2' onClick={addBear}>Add Bear</button>
+          <button className='mt-2' onClick={() => addBear()}>Add Bear</button>
           <button className='mt-2' onClick={clearBears}>Clear Bears</button>
           
         </WhiteCard>
